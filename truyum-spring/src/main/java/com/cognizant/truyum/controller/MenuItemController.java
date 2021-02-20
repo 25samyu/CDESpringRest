@@ -32,7 +32,7 @@ public class MenuItemController {
 	}
 
 	@GetMapping("/{id}")
-	public MenuItem getMenuItems(@PathVariable long id) {
+	public MenuItem getMenuItem(@PathVariable long id) {
 		LOGGER.info("START");
 		LOGGER.info("END");
 		return menuItemService.getMenuItem(id);
